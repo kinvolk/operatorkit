@@ -14,6 +14,10 @@ import (
 
 const (
 	tprInitMaxElapsedTime = 2 * time.Minute
+
+	// resyncPeriod is the interval at which the operator cache is invalidated,
+	// and the lister function is called.
+	ResyncPeriod = 1 * time.Minute
 )
 
 type Config struct {
